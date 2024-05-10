@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-03 02:09:15 "/>
+        <attribute name="created" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTEtMDM7IjAxOjIxOjI1ICI7MjcwOQ=="/>
+        <attribute name="edited" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTEtMDM7IjAyOjA5OjE1ICI7MTsyODIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="piupiccolo, numero, divisori" type="Integer" array="False" size=""/>
+            <output expression="&quot; inserisci il numero che  pensi sia primo&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="piupiccolo" expression="numero"/>
+            <assign variable="divisori" expression="0"/>
+            <while expression="piupiccolo&gt;=1">
+                <if expression="numero%piupiccolo==0">
+                    <then>
+                        <assign variable="divisori" expression="divisori+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="piupiccolo" expression="piupiccolo-1"/>
+            </while>
+            <if expression="divisori==2">
+                <then>
+                    <output expression="&quot;Il numero e primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero non e primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

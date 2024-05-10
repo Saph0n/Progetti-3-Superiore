@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-27 05:49:19 "/>
+        <attribute name="created" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjc7IjA1OjM3OjM3ICI7MjcyOA=="/>
+        <attribute name="edited" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjc7IjA1OjQ5OjE5ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, d, n, z, resto" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="0"/>
+            <assign variable="z" expression="0"/>
+            <output expression="&quot;Inserisci tra quanti numeri vuoi fare la somma dei solo dispari&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="d&lt;a">
+                <output expression="&quot;Inserisci il numero&quot;" newline="True"/>
+                <input variable="n"/>
+                <assign variable="resto" expression="n%2"/>
+                <if expression="resto=0">
+                    <then>
+                        <output expression="&quot;Il numero &#232; pari&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="d" expression="d+1"/>
+                        <output expression="&quot;Il numero &#232; dispari&quot;" newline="True"/>
+                        <assign variable="z" expression="z+n"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;La somma dei numeri dispari&#232;&quot;&amp;z" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

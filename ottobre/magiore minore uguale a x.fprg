@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-27 06:00:47 "/>
+        <attribute name="created" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjc7IjA1OjQ5OjMzICI7MjcyNw=="/>
+        <attribute name="edited" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjc7IjA2OjAwOjQ3ICI7MTsyODI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, z, n, max, min, u" type="Integer" array="False" size=""/>
+            <assign variable="z" expression="0"/>
+            <assign variable="max" expression="0"/>
+            <assign variable="u" expression="0"/>
+            <assign variable="min" expression="0"/>
+            <output expression="&quot;Inserisci il numero (X) che vuoi confrontare&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="z&lt;17">
+                <output expression="&quot;Inserisci il numero che vuoi confrontare con (X) mentre se vuoi finire digita: 0&quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="n=0">
+                    <then>
+                        <assign variable="z" expression="17"/>
+                    </then>
+                    <else>
+                        <if expression="n&gt;a">
+                            <then>
+                                <assign variable="max" expression="max+1"/>
+                            </then>
+                            <else>
+                                <if expression="n&lt;a">
+                                    <then>
+                                        <assign variable="min" expression="min+1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="n=a">
+                                            <then>
+                                                <assign variable="u" expression="u+1"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;I numeri maggiori di (X) sono:&quot; &amp;max" newline="True"/>
+            <output expression="&quot;I numeri minori di (X) sono:&quot;&amp; min" newline="True"/>
+            <output expression="&quot;I numeri uguali a (X) sono:&quot; &amp;u" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-25 06:40:07 "/>
+        <attribute name="created" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjU7IjA2OjEwOjMyICI7MjcxMw=="/>
+        <attribute name="edited" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjU7IjA2OjQwOjA3ICI7MTsyODI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, b, a, vass" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;Tra quanti numeri vuoi calcolare il valore assoulto?&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="b&lt;n">
+                <output expression="&quot;Inserisci il numero&quot;" newline="True"/>
+                <input variable="a"/>
+                <if expression="a&lt;=0">
+                    <then>
+                        <assign variable="vass" expression="a*-1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Il valore assoluto &#232;&quot; &amp;a" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

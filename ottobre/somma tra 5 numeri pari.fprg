@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Pablo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-25 08:24:59 "/>
+        <attribute name="created" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjU7IjA2OjQwOjU5ICI7MjcyNQ=="/>
+        <attribute name="edited" value="UGFibG87REVTS1RPUC0xSTJDVU42OzIwMjEtMTAtMjU7IjA4OjI0OjU5ICI7MjsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, s, d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <input variable="n"/>
+            <while expression="d&lt;n">
+                <output expression="&quot;Inserisci i numeri&quot;" newline="True"/>
+                <input variable="a"/>
+                <if expression="a%2=0">
+                    <then>
+                        <output expression="&quot;Il numero &#232; pari&quot;" newline="True"/>
+                        <assign variable="s" expression="s+a"/>
+                        <assign variable="d" expression="d+1"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Il numero &#232; dispari&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Il massimo tra i primi 5 numeri pari digitati &#232;&quot; &amp;s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
